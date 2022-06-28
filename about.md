@@ -10,7 +10,7 @@ Below are some of my technical skills:
 
 ## Software
 
-I'm confident using:
+I've used:
 
 - Python 3
 - C#
@@ -19,7 +19,7 @@ I'm confident using:
 - Bash
 - Lua
 
-And I'm also confident using tools like Git & GitHub to help with my workflow.
+In my projects, and I'm also confident using tools like Git & GitHub to help with my workflow.
 
 ## Audiovisual
 
