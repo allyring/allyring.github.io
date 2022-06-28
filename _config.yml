@@ -5,8 +5,6 @@ description: > # description of the site (multiple lines allowed)
  Welcome to my website, where I discuss my experiences with software development, music technologies, and audiovisual systems.
 permalink: /:slug
 
-favicon: "./logo.png" # relative path to site's favicon
-
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
 
@@ -30,8 +28,6 @@ theme_config:
     title_misc_list: Details
     title_blog: Blog
     title_old_projects: Old Projects
-  music:
-    title_blog: Music Blog
 
 highlighter: rouge
 

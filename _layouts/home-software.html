@@ -13,11 +13,7 @@ layout: default
 
 {{ content }}
 
-
-<!-- {% if site.theme_config.show_blog == true %} -->
-  <h2>{{ site.theme_config.software.title_blog }}</h2>
-  {% include software_post_list.html %}
-<!-- {% endif %} -->
+{% include software_post_list.html %}
 
 {% if site.theme_config.show_footer == true %}
   <footer>

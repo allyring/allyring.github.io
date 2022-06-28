@@ -13,11 +13,7 @@ layout: default
 
 {{ content }}
 
-
-<!-- {% if site.theme_config.show_blog == true %} -->
-  <h2>{{ site.theme_config.audiovisual.title_blog }}</h2>
-  {% include audiovisual_post_list.html %}
-<!-- {% endif %} -->
+{% include audiovisual_post_list.html %}
 
 {% if site.theme_config.show_footer == true %}
   <footer>

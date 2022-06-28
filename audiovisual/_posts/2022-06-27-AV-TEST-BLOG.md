@@ -2,7 +2,7 @@
 layout: post
 title:  "AV Test Blog"
 date:   2022-06-27 12:45:15 +0100
-category: Audiovisual
+category: AV
 ---
 Here is some audiovisual content.
 Velit sit sint adipisicing sint qui nostrud nisi id quis. Ex ullamco aliqua in id occaecat ut. Non ipsum aliqua exercitation Lorem pariatur velit.
