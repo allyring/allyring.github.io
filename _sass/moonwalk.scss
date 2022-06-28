@@ -68,9 +68,9 @@ html {
     --bg-secondary: #f8f8f8;
     --headings: #000;
     --text: #333;
-    --links: blue;
-    --highlight: #ceffb2; // light green
-    --code-text: #3b179d;
+    --links: rgb(0, 255, 55);
+    --highlight: #5ed368; // light green
+    --code-text: #00a5a5;
     --share-text: #999;
 }
 // -------------- THEME SWITCHER -------------- //
@@ -79,7 +79,7 @@ html {
       --headings: #7ffc74;
       --links: #30cc45;
       --highlight: #36ca31;
-      --bg: #1f2a21;
+      --bg: #141d1a;
       --bg-secondary: #324537;
       --text: #dadada;
       --code-text: #91ffff;
