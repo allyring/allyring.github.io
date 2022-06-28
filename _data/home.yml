@@ -1,14 +1,14 @@
 navbar_entries:
-  - title: about
+  - title: About
     url: /about
 
-  - title: music
+  - title: Music
     url: /music
 
-  - title: software development
+  - title: Software Development
     url: /software
 
-  - title: audiovisual
+  - title: Audiovisual
     url: /audiovisual
 
 footer_entries:
