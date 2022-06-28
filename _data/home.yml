@@ -11,16 +11,6 @@ navbar_entries:
   - title: audiovisual
     url: /audiovisual
 
-project_entries:
-  - title: Project 1
-    url: false
-    desc: Test 1
-
-old_project_entries:
-  - title: This shouldn't be shown
-    url: False
-
-
 footer_entries:
 
   - title: GitHub
@@ -31,8 +21,3 @@ footer_entries:
 
   - title: RSS
     url: feed.xml
-
-misc_entries:
-  - title: This shouldn't be shown
-    url: false
-

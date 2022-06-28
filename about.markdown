@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: About
-permalink: /about/
+permalink: /about
 ---
 
-Test page.
+Hi, I'm Ally, a software developer, audiovisual technician, and electronic musician.
