@@ -69,21 +69,21 @@ html {
     --headings: #000;
     --text: #333;
     --links: blue;
-    --highlight: #FFECB2; // light yellow
-    --code-text: #9D174D;
+    --highlight: #ceffb2; // light green
+    --code-text: #3b179d;
     --share-text: #999;
 }
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   html, body  {
-      --headings: #74c0fc;
-      --links: #91A7FF;
-      --highlight: #41C7C7;
-      --bg: #1f242A;
-      --bg-secondary: #323945;
-      --text: #adb5bd;
-      --code-text: #91A7FF;
-      --share-text: #C4C4C4;
+      --headings: #7ffc74;
+      --links: #30cc45;
+      --highlight: #36ca31;
+      --bg: #1f2a21;
+      --bg-secondary: #324537;
+      --text: #dadada;
+      --code-text: #91ffff;
+      --share-text: #757575;
   };
 }
 html[data-theme="dark"] { @include dark-appearance; }
