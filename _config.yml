@@ -2,7 +2,7 @@ title: Ally Ring
 author: Ally Ring
 url: https://allyring.github.io # root address of the site
 description: > # description of the site (multiple lines allowed)
- Welcome to my website, where I discuss my experiences with software development, music technologies, and audiovisual systems.
+ Welcome to my website, where I discuss my experiences with software development, cyber-security, and audiovisual systems.
 permalink: /:slug
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
