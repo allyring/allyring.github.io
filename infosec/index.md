@@ -1,5 +1,5 @@
 ---
-layout: home-infosec
-title: "InfoSec Blog"
-category: "InfoSec"
+layout: home-cybersecurity
+title: "Cyber Security Blog"
+category: "cyber-security"
 ---

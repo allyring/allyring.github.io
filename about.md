@@ -4,34 +4,24 @@ title: About
 permalink: /about
 ---
 
-Hi, I'm Ally, a software developer, audiovisual technician, and electronic musician.
+Hi, I'm Ally, a cyber-security student, software developer, and audiovisual technician.
 
-Below are some of my technical skills:
+Below are some of my skills:
+
+## Cyber Security
+
+I'm learning cyber security through TryHackMe, and I have finished the "complete beginner", "pre-security" and "intro to cyber security" courses.  
+I have also previously completed the SANS Foundations course.
 
 ## Software
 
-I've used:
+I'm currently learning C# for an A-Level computer science course, and I am also learnign Go for personal projects.
 
-- Python 3
-- C#
-- JavaScript (as well as HTML & CSS)
-- PowerShell
-- Bash
-- Lua
-
-In my projects, and I'm also confident using tools like Git & GitHub to help with my workflow.
+I'm also confident using Python 3 and JavaScript, as well as the basics of tools like Git & GitHub in my workflow.
 
 ## Audiovisual
 
-I have experience working with lighting, projection and audio in theatres and event venues.
-I've used and am confident with the following technologies:
+I volunteer at a local arts venue, where I am responsible for stage lighting, film projection, and general technical support for live events.
 
-- TouchDesigner v99
-- DMX512 (as well as most common fixtures)
-- Artnet and sACN
-- The OSC protocol, OSC//PAR, and TouchOSC
-- MIDI
-
-## Music
-
-I'm primarily producing techno, with a bit of progressive house mixed in, but I'm open to other genres.
+During my time there, I've had the opportunity to work on a show for Grammy-winninng artist Albert Lee; folk artists Reg Meuross and Steve Knightly; and many other local and regional bands.  
+I've also done lighting for conference, charity, and educational events.

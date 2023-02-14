@@ -2,7 +2,7 @@
 layout: post
 title:  "Reverse engineering the Nookazon API"
 date:   2022-07-02 11:03:00 +0100
-category: "InfoSec"
+category: "Cyber-Security"
 ---
 
 Recently I was looking at the Nookazon website, and was wondering if they had a public API. After a quick Google search, it turns out that Nookazon does have an REST API that returns JSON data, but that it didn't have any documentation.

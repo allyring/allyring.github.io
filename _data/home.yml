@@ -5,13 +5,13 @@ navbar_entries:
   - title: About
     url: /about
 
-  - title: InfoSec
-    url: /infosec
+  - title: Cyber Security
+    url: /cybersecurity
 
   - title: Software Development
     url: /software
 
-  - title: Audiovisual
+  - title: Audio-Visual
     url: /audiovisual
 
 footer_entries:
