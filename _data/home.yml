@@ -5,8 +5,8 @@ navbar_entries:
   - title: About
     url: /about
 
-  - title: Music
-    url: /music
+  - title: InfoSec
+    url: /infosec
 
   - title: Software Development
     url: /software
@@ -18,6 +18,9 @@ footer_entries:
 
   - title: GitHub
     url: https://github.com/allyring
+
+  - title: Mastodon
+    url: https://infosec.exchange/@allysboredaf
 
   - title: Email
     url: mailto:allyring1@outlook.com
