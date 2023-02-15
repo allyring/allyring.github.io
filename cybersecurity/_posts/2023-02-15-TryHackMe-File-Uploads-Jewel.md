@@ -5,7 +5,7 @@ date:   2023-02-15 15:33:00 +0100
 category: "Cyber-Security"
 ---
 
-I recently completed the "[File Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns)" room on TryHackMe, and I figured I'd do a writup on how I completed the challenge room, "Jewel".
+I recently completed the "[File Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns)" room on TryHackMe, and I figured I'd do a writeup on how I completed the challenge room, "Jewel".
 
 ---
 
