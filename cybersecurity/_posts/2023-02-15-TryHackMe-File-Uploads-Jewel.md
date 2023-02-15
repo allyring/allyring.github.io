@@ -117,7 +117,7 @@ To assist with enumeration, I had been supplied with a word-list of filenames. B
 
 I set up `gobuster` to enumerate these file names using combinations of the `.jpg` and `.js` extensions:
 ```bash
-=gobuster dir -u http://jewel.uploadvulns.thm/content -w ~/Downloads/UploadVulnsWordlist.txt -x js,jpg,jpg.js
+gobuster dir -u http://jewel.uploadvulns.thm/content -w ~/Downloads/UploadVulnsWordlist.txt -x js,jpg,jpg.js
 ```
 
 ```
@@ -130,9 +130,9 @@ I set up `gobuster` to enumerate these file names using combinations of the `.jp
 ```
 `/SIK.jpg` appeared to be the backdoor I had uploaded, but it's extension had changed from `.jpg.js` to `.jpg`, meaning that I couldn't run it outright.
 
-I decided to also run a [[gobuster]] scan on the site, which showed several interesting directories that I had missed:
+I decided to also run a `gobuster` scan on the site, which showed several interesting directories that I had missed:
 ```bash
-> gobuster dir -u http://jewel.uploadvulns.thm -w /usr/share/wordlists/directory_scanner/directory_list_2.3_medium.txt
+gobuster dir -u http://jewel.uploadvulns.thm -w /usr/share/wordlists/directory_scanner/directory_list_2.3_medium.txt
 ```
 
 ```
@@ -148,15 +148,15 @@ I decided to also run a [[gobuster]] scan on the site, which showed several inte
 /Admin                (Status: 200) [Size: 1238]
 ```
 
-Notably, the `/admin` page contained a form to load arbitrary modules from the `/modules` directory:
-![[Pasted image 20230123161319.png]]
+Notably, the `/admin` page contained a form to load arbitrary modules from the `/modules` directory.
 
 I figured I could use this to execute the code I had uploaded, but I realised that the code I uploaded would immediately error due to the magic numbers put in at the start of the file, so I re-uploaded the file and changed the Base64 contents of the upload in the intercepted request in Burp Suite to be an unmodified payload.
 
-I then reran [[gobuster]], without the previous options to discover `.js` and `.jpg.js` files:
+I then reran `gobuster`, without the previous options to discover `.js` and `.jpg.js` files:
 ```bash
-> > gobuster dir -u http://jewel.uploadvulns.thm/content -w ~/Downloads/UploadVulnsWordlist.txt -x jpg
+gobuster dir -u http://jewel.uploadvulns.thm/content -w ~/Downloads/UploadVulnsWordlist.txt -x jpg
 ```
+
 ```
 2023/01/23 16:09:28 Starting gobuster in directory enumeration mode  
 ===============================================================  
@@ -165,7 +165,8 @@ I then reran [[gobuster]], without the previous options to discover `.js` and `.
 /EEI.jpg              (Status: 200) [Size: 393]
 ```
 
-I verified that the `EEI.jpg` file was the updated payload using [[curl]], then ran it using the admin panel with a netcat listener open, which gave me a shell!
+I verified that the `EEI.jpg` file was the updated payload using `curl`, then ran it using the admin panel with a netcat listener open, which gave me a reverse shell!
 
+---
 
 Overall, I really enjoyed working through this room. It managed to cover not only common file-upload vulnerabilities, but also using Burp Suite, analysing source code, and enumerating a web server.
