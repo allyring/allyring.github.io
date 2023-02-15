@@ -9,7 +9,7 @@ I recently completed the "[File Upload Vulnerabilities](https://tryhackme.com/ro
 
 ---
 
-I started out by visiting the web-page though Burp Suite's browser, which generated a sitemap:
+I started out by visiting the web-page though Burp Suite's browser, which generated a sitemap.
 The page appeared to advertise uploading a photo of some kind, so I tested uploading standard `jpg`, and `gif` files.
 
 The JPEG file was able to be uploaded, but the GIF file was blocked for being too large. This put the upload limit somewhere between 21KB and 484KB.
