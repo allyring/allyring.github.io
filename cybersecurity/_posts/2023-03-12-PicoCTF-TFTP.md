@@ -276,4 +276,4 @@ However, `steghide` requested a password to extract the information, but the sec
 
 ---
 ## Conclusion
-While tools already exist to extract full files from packet captures of TFTP transfers, it's helpful to know how to develop your own tools to carve data from packet captures, as situations may arise where a novel technique has been used to transfer data covertly over a network. I'd absolutely reccomend taking on a similar challenge for 
+While tools already exist to extract full files from packet captures of TFTP transfers, it's helpful to know how to develop your own tools to carve data from packet captures, as situations may arise where a novel technique has been used to transfer data covertly over a network. I'd absolutely reccomend taking on a similar challenge for yourself, and avoid using existing tools in a non-competitive environemt.
