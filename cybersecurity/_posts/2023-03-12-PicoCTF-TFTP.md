@@ -264,7 +264,8 @@ I ran my script on the `tftp.pcapng` file, and extracted 6 files:
 - `instructions.txt`
 
 I started by looking at `plan` and `instructions.txt`, which seemed to be encoded text files. Based on the additional characters in both files, I guessed that the encoding was either ROT13 or ROT47. I put both pieces of text into CyberChef with a simple ROT13, and got the following cleartext messages:
-> TFTPDOESNTENCRYPTOURTRAFFICSOWEMUSTDISGUISEOURFLAGTRANSFER.FIGUREOUTAWAYTOHIDETHEFLAGANDIWILLCHECKBACKFORTHEPLAN
+> TFTPDOESNTENCRYPTOURTRAFFICSOWEMUSTDISGUISEOURFLAGTRANSFER.
+> FIGUREOUTAWAYTOHIDETHEFLAGANDIWILLCHECKBACKFORTHEPLAN
 
 > IUSEDTHEPROGRAMANDHIDITWITH-DUEDILIGENCE.CHECKOUTTHEPHOTOS
 
