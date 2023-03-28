@@ -36,7 +36,7 @@ I then ran the `strings` command on the image, and again found no helpful data.
 
 I then began to look at the image data using [CyberChef](https://gchq.github.io/CyberChef/). I used the "Randomize Colour Palette" operation to look for any abnormal patterns in the image's noise that I may have missed, and sure enough, there was a distinct section of noise at the bottom of the image that was a different colour to the rest of the image.
 
-!(https://allyring.github.io/assets/images/PCTF23-IWORDS-RandomPalette.bmp)
+![The source image with all pixel's colours modified](https://allyring.github.io/assets/images/PCTF23-IWORDS-RandomPalette.bmp)
 
 I then used the "View Bit Plane" operator to inspect each colour channel to see if it was affecting the section of noise where I suspected data may have been hidden.
 
