@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Utilising computer networks in AV productions"
-date:   2023-08-01 23:15:00 +0100
+date:   2023-08-04 22:40:00 +0100
 category: "AV"
 ---
 
